@@ -55,6 +55,155 @@
             <li>라면을 넣는다.</li>
             <li>먹는다.</li>
             <li>설걷이를 한다.</li>
-        </ol>    
+        </ol> 
+        <!-- definition list 정의형 목록-->
+        <dl>
+            <dt>unordered list</dt>
+            <dd>비 순차적 목록은 순서가 없고 위치가 바뀌어도 의미가 바뀌지 않는 목록을 의미합니다.</dd>
+
+            <dt>definition list 정의형 목록</dt>
+            <dd>정의형 목록은 어떤 용어나 단어등을 정의(의미를 명확히)힐때 사용합니다.</dd>
+        </dl>
+
+        <!--strong, em <> b, i-->
+        <strong>강한 강조</strong>
+        <em>강조</em>
+
+        <b>볼드체</b>
+        <i>이텔릭체</i>
+
+        <!-- ins 첨부, del 삭제 <> u,strike-->
+        <ins>첨부내용</ins><!--부연설명-->
+        <del>삭제</del><!--중요한건 아니지만 명시는 해 둠-->
+
+        <u>밑줄</u><!--makr up-->
+        <strike>가운데 줄</strike><!--mark up-->
+
+        <!--sup 윗첨자, sub 아랫첨자-->
+        2<sup>2</sup>:2의 2제곱
+        H<sub>2</sub>O:물의 화학식
+
+        <img src="./images/cat.jpg" witdth="100px"/>
+        <img src="images/cat.jpg" height="100px"/>
+
+        <!-- table, tr,td -->
+        <style>
+            table, tr, td {border:solid 1px black;}
+        </style>
+        <!-- summary 요약, caption 표제-->
+     
+        
+         <!-- thead, tbody, tfoot -->
+         <!-- scope 초점, 망원경 : col옐 row행 -->
+       
+        <table summary="표 설명">
+            <caption>[표1] 표 제목</caption>
+            <thead>
+             <tr>
+                    <th scope="col">제목1</th>
+                    <th scope="col">제목2</th>
+                    <th scope="col">제목3</th>        
+                   <th scope="col">제목4</th>
+                   <th scope="col">제목5</th>
+        
+            </tr>
+        </thead>
+            <!-- tr 한 줄, td 한 칸 -->
+            <tbody>
+            <tr>
+                <!-- colspan 가로(열) 늘이기, rowspan 세로(행) 늘이기 -->
+                <td colspan="2">1</td>
+                <td rowspan="2">2</td>
+                <td>3</td>
+                <td>4</td>
+
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- div, span 분할-->
+        <!-- 의미없이 쓰기 좋은 테그들-->
+        <!-- 블록형 -->
+        <div>내용</div>
+        <!-- 인라인형 테그 -->
+        <span>내용</span>
+        
+        <style>
+                table{
+                    border: 1px solid black;
+                }
+                td{
+                    border: 1px solid black;
+                }
+            </style>
+            <table>
+                <tr>
+                    <td colspan="2">1</td>
+                    <td rowspan="2">2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">4</td>
+                    <td colspan="1">5</td>
+                </tr>
+                <tr>
+                    <td colspan="2">7</td>
+                </tr>
+            </table>
+
+            <!---form 양식지-->
+            <form>
+                <!--text,password,radio,checkbox-->
+                <input type="text" placeholder="아이디를 입력해주세요" value=""/>
+                <input type="password" placeholder="암호를 입력해주세요" value=""/>
+                <input type="radio" name="bt1" value="1"/>
+                <input type="radio" name="bt1" value="2"/>
+                <input type="radio" name="bt1" value="3"/>
+                <!-- 같은 정보의 라디오 버튼의 이름은 같아야함-->
+                <input type="radio" name="bt2" value="1"/>
+                <input type="radio" name="bt2" value="2"/>
+                <input type="radio" name="bt2" value="3"/>
+                <input type="checkbox" value="1"/>
+                <input type="checkbox" value="2"/>
+                <input type="checkbox" value="3"/>
+
+                <select>
+                    <option>
+                        사이트 이름
+                    </option>
+                    <option>
+                         네이버
+                    </option>
+                    <option>
+                        구글
+                    </option>
+                    <option>
+                        페이스북
+                    </option>
+                </select>
+            </form>
+
+            <!-- cols 열 갯수(글자수), rows 행 갯수 -->
+            <textarea cols="20" rows="3">
+                ?
+            </textarea>
+            <!-- button -->
+            <input type="button" value="버튼이름" onclick="alert('테스트완료')" value="테스트 버튼"/> 
+
+
+            <!--submit 제출버튼-->
+            <input type="submit" value="제출"/>
+            
+
+
+        
+
     </body>
 </html>
