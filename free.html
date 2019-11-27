@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>free</title>
+        <meta charset="utf-8" />
+        <style>
+           /* css 작성하는 곳 */ 
+           body{
+               margin: 0px;
+           }
+           header{
+               background-color: #be3837;
+               color: white;
+               padding: 10px 70px; /* 상하 좌우 */
+               position:fixed;
+               width: 100%;
+               padding-left:0px;
+               padding-right:0px;
+           }
+           header>h1{
+               margin: 0px;
+           }
+           header>h1>div>span:nth-child(1){
+               color: white;
+           }
+           header>h1>div>span:nth-child(2){
+               color: #e3cea3;
+           }
+           header>nav li{
+               float: left;
+               list-style: none;
+               padding: 0px 15px; /* 상하 좌우 */
+           }
+           nav li:hover{
+            color: #e3cea3;
+            font-weight: bold;
+            font-size: 18px;
+        }
+           
+           header ul{
+               margin: 12px 0px;
+           }
+           .clear{
+                clear: both; /* 지우다: 양쪽 */
+                height: 0px; /* 높이: 0px */ 
+                overflow: hidden; /* 넘쳤을 때: 숨김 */
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+            #main_visual{
+                background-image: url("images/ehon1.jpg");
+                height: 400px;
+                background-size: auto 100% ;
+                background-size: cover;
+                background-repeat: no-repeat;
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: black;
+                background-position: 50% 50%; /* 가로 세로 */
+
+                color: white; /* 상속 */
+                text-align: center;
+
+                padding: 200px 0px; /* 상하 좌우 */
+            }
+            #main_visual_h2{
+                letter-spacing: 15px;
+                font-size: 35px;
+                margin: 8px 0px; /* 상하 좌우 */
+            }
+            #main_visual img{
+                margin-top: 70px;
+            }
+
+            #title_top{
+                font-size: 20px;
+            }
+            #title_bottom{
+                font-size: 15px;
+            }
+            section{
+                text-align: center;
+            }
+            section h3{
+                color: #be3837;
+                font-size: 25px;
+                font-weight: normal;
+                margin: 50px 0px
+            }
+            section p{
+                margin: 50px 100px;
+            }
+            section #about_list{
+                padding: 0px;
+                margin: 0px 50px;
+            }
+            section dd{
+                margin: 0px;
+            }
+            section>#about_list>li{
+                float: left;
+                width: 200px; /* 고정값 */
+                width: calc(25% - (1px / 4 * 3) - 30px - 30px);
+
+                list-style: none;
+                border-right: solid 1px grey;
+                padding: 30px;
+            }
+            section>#about_list>li:nth-child(4){
+               border: none;
+            }
+            #work_list>li{
+                float:left;
+                list-style: none;
+                width: 25%;
+            }
+            #work_list img{
+                width: 100%; /*있을 수 있는 공간 100% 기준 */
+                display: inline; /* 원래 이미지의 출력방식 */
+                display: block; /* 블록형으로 변경 */
+            } 
+            #work_list{
+                padding: 0px;
+                margin: 0px;
+            }
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #title{
+                padding-left:10px
+            }
+            footer{
+                background-color: #be3837;
+                color: #ccc;
+
+                padding: 10px 50px;
+            }
+            footer>div>ul>li{
+                float:left;
+                list-style: none;
+                padding: 0px 10px; /* 상하 좌우 */
+
+                border-right:solid 2px #ccc;
+            }
+            footer>div>ul>li:nth-child(6){
+               border: none;
+            }
+            footer>div>ul{
+                padding:0px
+            }
+            footer>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px /* 상하 좌우 */
+            }
+            footer>ul{
+                padding:0px;
+            }
+            #footer_left{
+                float: left;
+            }
+            #footer_right{
+                float: right;
+            }
+            #warp{
+                /* width: 1200px; /* 고정값 */
+                min-width: 1100px; /* 최소넓이 */
+                max-width: 1920px; /* 최대넓이 */
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <!-- div span -->
+                <div id=title>
+                    <span>MY</span><span>POLIO</span>
+                </div>
+                </h1>
+                <nav class="float_right">
+                   <ul>
+                     <li>HOME</li>
+                     <li>ABOUT ME</li>
+                     <li>SERVICE</li>
+                     <li>MY WORK</li>
+                     <li>CONTACT ME</li>
+                     <div class="clear"></div>
+                   </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual">
+                <div id="title_top">안녕하세요</div>
+                <h2></h2>
+                <div id="title_bottom">Orem ipsum dolor sit amet, consectetur</div>
+                <img src="images/layout2_button.jpg"/>
+            </div>
+            <section>
+                <h3>ABOUT ME</h3>
+                <p>
+                    고등학교 시절 영상과 애니메이션을 전공하였고 지금은 계원예술대학교 디지털미디어디자인과에 재학중입니다. 
+                    <br />다양하고 즐거운 경험을 추구하며 경계없는 사고를 할 수 있는 디자이너가 되기 위해 노력중입니다.
+                </p>
+                <ul id="about_list">
+                    <li>
+                        <img src="images/layout2_icon1.jpg"/> 
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>onsectetur adipisicing elit, 
+                                sedo eiusmod tempor incidi et 
+                                dolorerserss eerhfre mag.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                            <img src="images/layout2_icon2.jpg"/> 
+                            <dl>
+                                <dt>Title goes here</dt>
+                                <dd>onsectetur adipisicing elit, 
+                                    sedo eiusmod tempor incidi et 
+                                    dolorerserss eerhfre mag.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                                <img src="images/layout2_icon3.jpg"/> 
+                                <dl>
+                                    <dt>Title goes here</dt>
+                                    <dd>onsectetur adipisicing elit, 
+                                        sedo eiusmod tempor incidi et 
+                                        dolorerserss eerhfre mag.</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                    <img src="images/layout2_icon4.jpg"/> 
+                                    <dl>
+                                        <dt>Title goes here</dt>
+                                        <dd>onsectetur adipisicing elit, 
+                                            sedo eiusmod tempor incidi et 
+                                            dolorerserss eerhfre mag.</dd>
+                                    </dl>
+                                </li>
+                                <div class="clear"></div>   
+                </ul>
+            </section>
+            <section>
+                <h3>MY WORK</h3>
+                <p>
+                        프레젠테이션, 편집디자인, 사진활영, 영상편집, 아트워크 모든 분야를 아우르는 디자이너가 되는 것이 목표입니다.
+                </p>
+                    <ul id="work_list">
+                         <li><video width="100%" height="100%" controls autoplay muted><source src="images/ehon2.mp4" type="video/mp4"></video> </li>
+                         <li><img src="images/ehon11.png"/></li>
+                         <li><img src="images/ehon4.jpeg"/> </li>
+                         <li><img src="images/ehon5.jpeg"/> </li>
+                         <li><img src="images/ehon6.jpeg"/> </li>
+                         <li><img src="images/ehon7.jpeg"/> </li>
+                         <li><img src="images/ehon9.jpeg"/> </li>
+                         <li><img src="images/ehon8.jpeg"/> </li>
+                    <div class="clear"></div>
+                    </ul>
+            </section>
+            <footer>
+                <div id="footer_left">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Service</li>
+                        <li>Work</li>
+                        <li>Blog</li>
+                        <li>Contact Us</li>
+                        <div class="clear"></div><!--float left 해제-->
+                    </ul>
+                    <div id="copyright">ⓒ 2019 Eh:on All Right Reserved.</div>
+
+                    <div>
+                      the loges in the design are the property
+                        of their respective owner/copyright
+                        holders.
+                    </div>
+                </div>
+                <ul id="footer_right"> <!-- 오른편 상자 역할 -->
+                    <li><img src= "images/layout1_footer_icon1.png"/></li>
+                    <li><img src= "images/layout1_footer_icon2.png"/></li>
+                    <li><img src= "images/layout1_footer_icon3.png"/></li>
+                    <li><img src= "images/layout1_footer_icon4.png"/></li>
+                    <li><img src= "images/layout1_footer_icon5.png"/></li>
+                    <li><img src= "images/layout1_footer_icon6.png"/></li>
+                    <div class="clear"></div><!--float left 해제-->
+                </ul>
+                <div class="clear"></div><!--float left 해제-->
+            </footer>
+        </div>
+    </body>
+</html>   

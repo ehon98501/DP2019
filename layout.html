@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,6 +8,9 @@
             header,div,nav,footer,ul,li,h1,h2,h3{
                /* border: solid 1px black; */ /* 경계선 긋기 */
                /* margin: 10px; */ /* 서로간 여유공간 만들기 */
+            }
+            header{
+                padding: 10px 50px; /* 상하 좌우 */
             }
             header>ul>li{
                 float:left; /* 둥둥 떠다니게 : 왼쪽 기준 */
@@ -51,8 +55,10 @@
                 margin:27px;
             }
             nav{
-                padding:10px 50px;
-                background-color:#eee;}
+                background-color: #ddd;
+                padding: 10px 50px;
+            }
+               
             #content>div:nth-child(1){
                 background-color:#98f;}
             #content>div:nth-child(2){
@@ -80,58 +86,56 @@
                 margin-left:200px;/*고정값*/
                 margin-left:auto;/*가변값*/
                 margin-right:auto;/*가변값*/
-                padding: 30px 0px;
+
+                padding: 50px 0px;
             }
             footer{
-                background-color:#555;
-                color:#ccc;
-                padding:10px 50px;
-                width:1100px;
+                background-color: #555;
+                color: #ccc;
+
+                padding: 10px 50px;
             }
             footer>div>ul>li{
                 float:left;
-                list-style:none;
-                padding: 0px 10px;/*상하좌우*/
+                list-style: none;
+                padding: 0px 10px; /* 상하 좌우 */
+
                 border-right:solid 2px gray;
             }
             footer>div>ul>li:nth-child(6){
-                border:none;
+               border: none;
             }
             footer>div>ul{
-                padding:0px;
+                padding:0px
             }
             footer>ul>li{
-                float:left;
-                list-style:none;
-                padding: 0px 10px;
+                float: left;
+                list-style: none;
+                padding: 0px 10px /* 상하 좌우 */
             }
             footer>ul{
                 padding:0px;
             }
             #footer_left{
-                float:left;
+                float: left;
             }
             #footer_right{
-                float:right;
+                float: right;
             }
-            header{
-                padding:10px 50px;
-            }
-            #wrap{
-                /*width:1200px;고정값*/
-                min-width:1100px;/*최소넓이*/
-                max-width:1920px;
-                margin-left:auto;  
-                margin-right:auto;
+            #warp{
+                /* width: 1200px; /* 고정값 */
+                min-width: 1100px; /* 최소넓이 */
+                max-width: 1920px; /* 최대넓이 */
+                margin-left: auto;
+                margin-right: auto;
             }
             body{
-                margin:0px;
+                margin: 0px;
             }
-
         </style>
     </head>
     <body>
-        <div id="wrap">
+        <div id="warp">
             <header>
                 <h1 class="float_left">
                     <img src="images/layout1_head_logo.jpg" /> 
@@ -313,37 +317,36 @@
                     </section>
                 </div>
             </div>
-        </div>
             <footer>
                 <div id="footer_left">
-                     <ul>
+                    <ul>
                         <li>Home</li>
                         <li>About</li>
                         <li>Service</li>
                         <li>Work</li>
                         <li>Blog</li>
-                        <li>Contact us</li>
-                        <div class="clear"> </div><!--float left 해제-->
+                        <li>Contact Us</li>
+                        <div class="clear"></div><!--float left 해제-->
                     </ul>
-                     <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
+                    <div id="copyright">ⓒ 2013 BlueBox. All Right Reserved.</div>
+
                     <div>
-                        the loges in the design are the property of 
-                        their respective owners/copyright holders.
+                      the loges in the design are the property
+                        of their respective owner/copyright
+                        holders.
                     </div>
                 </div>
+                <ul id="footer_right"> <!-- 오른편 상자 역할 -->
+                    <li><img src= "images/layout1_footer_icon1.png"/></li>
+                    <li><img src= "images/layout1_footer_icon2.png"/></li>
+                    <li><img src= "images/layout1_footer_icon3.png"/></li>
+                    <li><img src= "images/layout1_footer_icon4.png"/></li>
+                    <li><img src= "images/layout1_footer_icon5.png"/></li>
+                    <li><img src= "images/layout1_footer_icon6.png"/></li>
+                    <div class="clear"></div><!--float left 해제-->
+                </ul>
                 <div class="clear"></div><!--float left 해제-->
-                </div>
-                <ul id="footer_right"><!--오른편 상자 역활-->
-                     <li><img src="images/layout1_footer_icon1.png"/></li>
-                     <li><img src="images/layout1_footer_icon2.png"/></li>
-                     <li><img src="images/layout1_footer_icon3.png"/></li>
-                     <li><img src="images/layout1_footer_icon4.png"/></li>
-                     <li><img src="images/layout1_footer_icon5.png"/></li>
-                     <li><img src="images/layout1_footer_icon6.png"/></li>
-                     <div class="clear"></div><!--float left 해제-->
-                 </ul>
-                 <div class="clear"></div><!--float left 해제-->
             </footer>
-        </div>
-    </body>
+        
+</body>
 </html>
