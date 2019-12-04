@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eh:on Gallery</title>
+<!-- Bootstrap core CSS & JavaScript -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Footer Custom style -->
+<link href="css/sticky-footer-navbar.css" rel="stylesheet">
+<!-- 예제에서 사용하기 위해 정의한 CSS -->
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Menu(상단고정) -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Eh:on</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="freefree.html">Home</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Practice <span
+                        class="caret"></span>
+                </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="layout.html">layout1</a></li>
+						<li><a href="layout2.html">layout2</a></li>
+						<li><a href="layout3.html">layout3</a></li>
+                    </ul></li>
+				<li><a href="freefree copy 2.html">About</a></li>
+				<li><a href="freefree copy.html">Gallery</a></li>
+				<li><a href="freefree copy 3.html">Contact</a></li>
+				<li><a href="free.html">before</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!--/ Top Menu(상단고정) -->
+
+<!--content-->
+
+<!--page header-->
+<div class="book-page-header-photo">
+    <div class="page-header book-page-header">
+        <div class="container">
+            <h1>
+                Gallery <br> <small>Eh:on의 흔적들</small>
+            </h1>
+        </div>
+    </div>
+</div>
+<!--/page header-->
+
+<!--/tab-->
+<div role="tabpanel">
+    <!--nav tabs-->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#works" role="tab" data-toggle="tab">works</a></li>
+        <li role="presentation"><a href="#l" aria-controls="Animal" role="tab" data-toggle="tab">업데이트 예정입니다.</a></li>
+        <li role="presentation"><a href="#" aria-controls="Food" role="tab" data-toggle="tab">업데이트 예정입니다.</a></li>
+    </ul>
+</div>
+<!--/tab-->
+
+
+<br>
+
+<!-- Content -->
+
+<div class="row">
+    <div class="col-md-3">
+        <a href="#" data-toggle="modal" data-target="#imageModal" data-whatever="images/ehon4.jpeg"><img src="images/ehon4.jpeg"
+            class="img-responsive img-thumbnail" alt="Responsive image"></a>
+        <h5>타이포</h5>
+    </div>
+
+    
+    <div class="col-md-3">
+        <a href="#" data-toggle="modal" data-target="#imageModal" data-whatever="images/ehon5.jpeg"><img src="images/ehon5.jpeg"
+            class="img-responsive img-thumbnail" alt="Responsive image"></a>
+        <h5>포스터</h5>
+    </div>
+
+    <div class="col-md-3">
+        <a href="#" data-toggle="modal" data-target="#imageModal" data-whatever="images/ehon6.jpeg"><img src="images/ehon6.jpeg"
+            class="img-responsive img-thumbnail" alt="Responsive image"></a>
+        <h5>일러스트</h5>
+    </div>
+
+    <div class="col-md-3">
+        <a href="#" data-toggle="modal" data-target="#imageModal" data-whatever="images/ehon7.jpeg"><img src="images/ehon7.jpeg"
+            class="img-responsive img-thumbnail" alt="Responsive image"></a>
+        <h5>일러스트</h5>
+    </div>
+
+    <div class="col-md-3">
+        <a href="#" data-toggle="modal" data-target="#imageModal" data-whatever="images/ehon9.jpeg"><img src="images/ehon9.jpeg"
+            class="img-responsive img-thumbnail" alt="Responsive image"></a>
+        <h5>아트워ㅡ</h5>
+    </div>
+
+    <div class="col-md-3">
+        <a href="#" data-toggle="modal" data-target="#imageModal" data-whatever="images/ehon10.png"><img src="images/ehon10.png" width="600px"
+            class="img-responsive img-thumbnail" alt="Responsive image"></a>
+        <h5>프레젠테이션</h5>
+
+    </div>
+    </div>
+</div>
+<!--/ Content -->
+
+<!-- Pagination -->
+<nav>
+    <ul class="pagination">
+        <li><a href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
+        </a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">...</a></li>
+        <li><a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span>
+        </a></li>
+    </ul>
+</nav>
+<!--/ Pagination -->
+
+</div>
+<!-- Content -->
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="" class="img-responsive img-thumbnail" alt="Responsive image" onClick="javascript:$('#imageModal').modal('hide');">
+        </div>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript">
+$('#imageModal').on('show.bs.modal', function(event) {
+    var link = $(event.relatedTarget); // Button that triggered the modal
+    var recipient = link.data('whatever'); 
+    var modal = $(this);
+    modal.find('.modal-body img').attr("src", recipient);
+    modal.find('.modal-body img').attr("width", 800);
+});
+</script>
+<!--/modal-->
+</div class="modal-body" >
+<!-- Footer(하단 고정) -->    
+<footer class="footer">
+	<div class="container">
+		<p class="text-muted">&copy; COPYRIGHT 2019 Eh:on</p>
+	</div>
+</footer>
+<!--/ Footer(하단 고정) -->        
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eh:on Contact</title>
+<!-- Bootstrap core CSS & JavaScript -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Footer Custom style -->
+<link href="css/sticky-footer-navbar.css" rel="stylesheet">
+<!-- 예제에서 사용하기 위해 정의한 CSS -->
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Menu(상단고정) -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Eh:on</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="freefree.html">Home</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Practice <span
+                        class="caret"></span>
+                </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="layout.html">layout1</a></li>
+						<li><a href="layout2.html">layout2</a></li>
+						<li><a href="layout3.html">layout3</a></li>
+                    </ul></li>
+				<li><a href="freefree copy 2.html">About</a></li>
+				<li><a href="freefree copy.html">Gallery</a></li>
+				<li><a href="freefree copy 3.html">Contact</a></li>
+				<li><a href="free.html">before</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!--/ Top Menu(상단고정) -->
+    
+<!-- Content -->
+<!-- Page Header -->    
+<div class="book-page-header-contact">
+	<div class="page-header book-page-header">
+		<div class="container">
+			<h1>
+				Contact<br> <small>Eh:on은 언제나 기다리고 있습니다!</small>
+			</h1>
+		</div>
+	</div>
+</div>
+<!--/ Page Header -->
+
+<div class="container">
+
+    <div id="googleMap" style="width: 100% x; height: 380px;"></div>
+    
+    <!-- Google Map -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapProp = {
+                center : new google.maps.LatLng(37.566535, 126.97796919000007),
+                zoom : 12,
+                mapTypeId : google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),
+                    mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>    
+    
+	<div class="row">
+
+		<div class="col-md-8">
+			<h2>연락하기</h2>
+			<form>
+				<p>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="password" id="inputName" class="form-control" placeholder="Name" required autofocus>
+					</div>
+					<div class="col-md-6">
+						<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+					</div>
+				</div>
+				</p>
+				<p>
+					<textarea class="form-control" rows="7" placeholder="Message" required></textarea>
+				</p>
+				<p>
+					<button class="btn btn-primary" type="submit">Submit</button>
+				</p>
+			</form>
+		</div>
+
+		<div class="col-md-4">
+			<h2>More Info</h2>
+			<p>기말평가가 역대급으로 힘들어서 죽을 지경이다. 이번 평가는 그동안 배웠던것이 부족하다고 생각해 개인적으로 책을 구매해서 학습하고 있었는데,학습했
+				던 내용들과 수업시간에 들었던 내용들을 떠올리며 진행했었다. 하지만 그만큼 오류도 많이나고 스크립트를 참고하는것도, 링크를 걸어서 효과를 주는것도 어려워서
+				애를 먹었던 순간이 너무나도 많았다.방대한 양 코드를 밤새도록 하나하나 타이핑 하면서 어느정도 구조가 잡힌 것 같아
+				다행이라고 생각한다. 프로그래밍 과목에서 열심히 해보려 했지만 늘 뜻대로 되지 않았던 순간이 많았는데
+				세부전공으로 선택하지 않았더라도 이 과목은 디자이너가 됐을 때 유용하게 쓰일 것이 분명하다고 판단했기 때문에
+				방학을 빌어 조금 더 공부할 계획이다. 끝으로 일년 내내 가르쳐 주신 조건희 교수님께 감사인사를 드린다. 
+			</p>
+			<p>
+			<address>
+				<strong>Eh:on</strong><br> Saemalro, Yeonsu-gu, Incheon, Republic of Korea<br>Seoul, Korea<br> <abbr title="Phone">P:</abbr> 010-7**8-7362
+			</address>
+
+			<address>
+				<strong>E-Mail</strong><br> <a href="mailto:#">f**kcingkaywon@gmail.com</a>
+			</address>
+		</div>
+	</div>    
+
+</div>    
+<!--/ Content -->
+    
+<!-- Footer(하단 고정) -->    
+<footer class="footer">
+	<div class="container">
+		<p class="text-muted">&copy; COPYRIGHT 2019 Eh:on</p>
+	</div>
+</footer>
+<!--/ Footer(하단 고정) -->        
+
+</body>
+</html>

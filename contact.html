@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact</title>
+        <meta charset="utf-8" />
+        <style>
+           /* css 작성하는 곳 */ 
+           body{
+               margin: 0px;
+           }
+           header{
+               background-color: #be3837;
+               color: white;
+               padding: 10px 70px; /* 상하 좌우 */
+               position:fixed;
+               width: 100%;
+               padding-left:0px;
+               padding-right:0px;
+           }
+           header>h1{
+               margin: 0px;
+           }
+           header>h1>div>span:nth-child(1){
+               color: white;
+           }
+           header>h1>div>span:nth-child(2){
+               color: #e3cea3;
+           }
+           header>nav li{
+               float: left;
+               list-style: none;
+               padding: 0px 15px; /* 상하 좌우 */
+           }
+           nav li:hover{
+            color: #e3cea3;
+            font-weight: bold;
+            font-size: 15px;
+        }
+           
+           header ul{
+               margin: 12px 0px;
+           }
+           .clear{
+                clear: both; /* 지우다: 양쪽 */
+                height: 0px; /* 높이: 0px */ 
+                overflow: hidden; /* 넘쳤을 때: 숨김 */
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <!-- div span -->
+                <div id=title>
+                    <span>Eh:</span><span>ON</span>
+                </div>
+                </h1>
+                <nav class="float_right">
+                   <ul>
+                     <li>HOME</li>
+                     <li>ABOUT ME</li>
+                     <li>SERVICE</li>
+                     <li>MY WORK</li>
+                     <li>CONTACT ME</li>
+                     <div class="clear"></div>
+                   </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <!--content-->
+            <div class="book-page-header-contact">
+                <div class="page-heasder book-page-header">
+                    <div class="container" >
+                        <div id="googleMap" style="width:100% x; height:380px;">
+                        </div>
+                        <!--google map-->
+                        <script src="http://maps.googleapis.com/maps/api/js">
+                        </script>
+                        <script>
+                        function initialize(){
+                            var mapProp={
+                                center:new google.maps.LatLng(37.5575348,126.9617080),
+                                zoom:12,
+                                mapTypeId : google.maps.MapTypeId.ROADMAP
+                            };
+                            var map=new
+                            google.maps.Map(document.getElementById("googleMap"),
+                            mapProp);
+                        }
+                        goole.maps.event.addDomListener(window,'Load',initialize);
+                        </script> 
+                        <h1>Contact Us <br> <small>ddff</small>
+                        </h1>
+                    </div id="googleMap" style="width:100% x; height:380px;">
+                </div>>
+                </div>
+            </div>

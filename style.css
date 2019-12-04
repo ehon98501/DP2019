@@ -1,0 +1,29 @@
+
+
+#video-full
+{
+    width: 100
+}
+
+.book-page-header {
+	height: 200px;
+	margin-bottom: -40px;
+	padding-top: 20px;
+	color: #fff;
+}
+
+.book-page-header small {
+	color: #fff;
+}
+
+.book-page-header-movie {
+	background-color: yellow;
+}
+
+.book-page-header-about {
+	background-color: green;
+}
+
+.book-page-header-contact {
+	background-color: red;
+}
